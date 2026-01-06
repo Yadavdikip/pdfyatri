@@ -1,0 +1,538 @@
+/* Doc to PDF Converter Styles */
+
+.doc-to-pdf-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.dropbox {
+  border: 2px dashed #3498db;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.dropbox:hover {
+  border-color: #2980b9;
+  background: #f8f9fa;
+}
+
+.dropbox-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.dropbox-icon {
+  font-size: 3rem;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+.dropbox:hover .dropbox-icon {
+  color: #2980b9;
+}
+
+.dropbox-content p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.dropbox-hint {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin: 5px 0 0 0 !important;
+}
+
+.cloud-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.cloud-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid #3498db;
+  background: #ffffff;
+  color: #3498db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cloud-btn:hover {
+  background: #3498db;
+  color: white;
+}
+
+.drive-btn {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.drive-btn:hover {
+  background: #4285f4;
+  color: white;
+}
+
+.dropbox-btn {
+  border-color: #0061ff;
+  color: #0061ff;
+}
+
+.dropbox-btn:hover {
+  background: #0061ff;
+  color: white;
+}
+
+.btn-icon {
+  font-size: 1.1rem;
+}
+
+.file-preview-section h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.preview-box {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.file-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+
+.file-details {
+  flex: 1;
+}
+
+.file-details h4 {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin: 0 0 8px 0;
+  font-weight: 500;
+}
+
+.file-details p {
+  margin: 4px 0;
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.status.ready {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status.converted {
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.empty-preview {
+  text-align: center;
+  color: #6c757d;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.conversion-section,
+.download-section,
+.cloud-upload-section {
+  margin-bottom: 25px;
+}
+
+.convert-btn,
+.download-btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.convert-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+}
+
+.convert-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2980b9, #21618c);
+  transform: translateY(-2px);
+}
+
+.convert-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+}
+
+.download-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #229954, #1e8449);
+  transform: translateY(-2px);
+}
+
+.download-btn:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.cloud-buttons-upload {
+  display: flex;
+  gap: 10px;
+}
+
+.cloud-upload-btn {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #3498db;
+  background: #ffffff;
+  color: #3498db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+
+.cloud-upload-btn:hover:not(:disabled) {
+  background: #3498db;
+  color: white;
+}
+
+.cloud-upload-btn:disabled {
+  background: #f8f9fa;
+  color: #6c757d;
+  border-color: #e9ecef;
+  cursor: not-allowed;
+}
+
+.drive-upload {
+  border-color: #4285f4;
+  color: #4285f4;
+}
+
+.drive-upload:hover:not(:disabled) {
+  background: #4285f4;
+  color: white;
+}
+
+.dropbox-upload {
+  border-color: #0061ff;
+  color: #0061ff;
+}
+
+.dropbox-upload:hover:not(:disabled) {
+  background: #0061ff;
+  color: white;
+}
+
+.conversion-info {
+  background: #e8f8f5;
+  border: 1px solid #d1ecf1;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.conversion-info h4 {
+  color: #0c5460;
+  margin: 0 0 10px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.conversion-info p {
+  margin: 5px 0;
+  color: #0c5460;
+  font-size: 0.9rem;
+}
+
+.supported-formats {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.supported-formats h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.format-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.format-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: 1px solid #e9ecef;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .doc-to-pdf-container {
+    padding: 15px;
+  }
+
+  .main-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 20px;
+  }
+
+  .dropbox {
+    padding: 30px 15px;
+  }
+
+  .dropbox-content p {
+    font-size: 1rem;
+  }
+
+  .cloud-buttons {
+    flex-direction: column;
+  }
+
+  .cloud-buttons-upload {
+    flex-direction: column;
+  }
+
+  .format-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .doc-to-pdf-container {
+    padding: 10px;
+  }
+
+  .left-section,
+  .right-section {
+    padding: 15px;
+  }
+
+  .dropbox {
+    padding: 20px 10px;
+  }
+
+  .dropbox-icon {
+    font-size: 2.5rem;
+  }
+
+  .file-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .file-icon {
+    font-size: 2rem;
+  }
+
+  .convert-btn,
+  .download-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .cloud-upload-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .format-item {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .doc-to-pdf-container {
+    background: #1a1a1a;
+  }
+
+  .left-section,
+  .right-section,
+  .dropbox,
+  .supported-formats {
+    background: #2c3e50;
+    border-color: #34495e;
+  }
+
+  .dropbox:hover {
+    background: #34495e;
+  }
+
+  .dropbox-content p {
+    color: #ecf0f1;
+  }
+
+  .dropbox-hint {
+    color: #bdc3c7;
+  }
+
+  .cloud-btn {
+    background: #34495e;
+    border-color: #46627f;
+    color: #ecf0f1;
+  }
+
+  .cloud-btn:hover {
+    background: #3498db;
+  }
+
+  .file-preview-section h3,
+  .supported-formats h3 {
+    color: #ecf0f1;
+  }
+
+  .preview-box {
+    border-color: #34495e;
+  }
+
+  .file-details h4 {
+    color: #ecf0f1;
+  }
+
+  .file-details p {
+    color: #bdc3c7;
+  }
+
+  .status.ready {
+    background: #155724;
+    color: #d4edda;
+  }
+
+  .status.converted {
+    background: #0c5460;
+    color: #d1ecf1;
+  }
+
+  .empty-preview {
+    color: #bdc3c7;
+  }
+
+  .cloud-upload-btn {
+    background: #34495e;
+    border-color: #46627f;
+    color: #ecf0f1;
+  }
+
+  .cloud-upload-btn:disabled {
+    background: #1a1a1a;
+    color: #6c757d;
+  }
+
+  .conversion-info {
+    background: #2c3e50;
+    border-color: #34495e;
+  }
+
+  .conversion-info h4,
+  .conversion-info p {
+    color: #ecf0f1;
+  }
+
+  .format-item {
+    background: #34495e;
+    border-color: #46627f;
+    color: #ecf0f1;
+  }
+}

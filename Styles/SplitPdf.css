@@ -1,0 +1,306 @@
+/* Split PDF Styles */
+
+.split-pdf-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.split-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.split-header h1 {
+  color: #333;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.split-content {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Select File Dropbox */
+.select-file-dropbox {
+  border: 2px dashed #007bff;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);
+  margin-bottom: 30px;
+}
+
+.select-file-dropbox:hover {
+  border-color: #0056b3;
+  background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+  transform: translateY(-2px);
+}
+
+.upload-icon {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.dropbox-text {
+  margin: 5px 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+}
+
+/* Selected File Section */
+.selected-file-section {
+  margin-bottom: 30px;
+}
+
+.section-heading {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.a4-boxes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.a4-box {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.file-name {
+  flex: 1;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #f8d7da;
+}
+
+.file-details {
+  display: flex;
+  gap: 15px;
+  color: #666;
+  font-size: 14px;
+}
+
+.no-file {
+  text-align: center;
+  color: #6c757d;
+  padding: 40px 20px;
+}
+
+.no-file p {
+  margin: 10px 0 5px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* Range Settings */
+.range-settings {
+  margin-bottom: 30px;
+}
+
+.settings-heading {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.mode-buttons,
+.type-buttons {
+  margin-bottom: 20px;
+}
+
+.mode-btn,
+.type-btn {
+  padding: 10px 20px;
+  background: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.mode-btn.active,
+.type-btn.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.range-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.range-group {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+.range-heading {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.range-controls {
+  display: flex;
+  gap: 20px;
+}
+
+.range-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.range-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.range-input {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 80px;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.split-btn,
+.download-btn {
+  width: 100%;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.split-btn:hover:not(:disabled),
+.download-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0056b3, #004085);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.split-btn:disabled,
+.download-btn:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .split-content {
+    flex-direction: column;
+  }
+
+  .select-file-dropbox {
+    padding: 30px 15px;
+  }
+
+  .dropbox-text {
+    font-size: 16px;
+  }
+
+  .a4-boxes-container {
+    gap: 15px;
+  }
+
+  .a4-box {
+    padding: 15px;
+  }
+
+  .file-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .file-details {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .range-controls {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .range-input {
+    width: 100%;
+  }
+}
